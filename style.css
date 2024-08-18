@@ -29,6 +29,19 @@
 html, body {
   height: 100%;
   width: 100%;
+  /* cursor: none; */
+}
+
+.cursor {
+  height: 3.5vw;
+  width: 3.5vw;
+  border-radius: 50%;
+  /* background-color: white; */
+  position: fixed;
+  z-index: 999;
+  border: 1px solid rgba(255, 255, 255, 0.501);
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
 }
 
 .loader {
@@ -127,4 +140,59 @@ html, body {
   height: 100vh;
   width: 100%;
   background-color: #151515;
+}
+
+.page1 nav {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5vw 6vw;
+}
+
+.nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.nav-part2 h4 {
+  font-size: 1vw;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.center {
+  /* background-color: crimson; */
+  width: 73%;
+  margin-left: 27%;
+  width: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 99999;
+}
+
+.center:nth-child(2){
+  margin-top: 20vh;
+}
+
+.center h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  line-height: 7vw;
+}
+
+.center h2, .center h3 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  line-height: 7vw;
+}
+
+.center h2:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  font-weight: 500;
 }
