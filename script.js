@@ -50,7 +50,7 @@ function loadingAnimation() {
     opacity: 0
   });
 
-  tl.from(".center1 h1,.center2 h1,.center3 h2,.center h3,.center4 h1",{
+  tl.from(".center1 h1,.center2 h1,.center3 h2,.center3 h3,.center4 h1",{
     y: 120,
     stagger: 0.1
   });
@@ -70,4 +70,4 @@ function cursorAnimation() {
 
 
 loadingAnimation();
-cursorAnimation();
+// cursorAnimation();
